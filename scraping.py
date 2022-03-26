@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 from requests import Request, Session
 
-CMC_AK = config.CMC_AK
+CMC_AK = os.environ.get('CMC_AK')
 CMC_XRP_ID = config.CMC_XRP_ID
 
 
