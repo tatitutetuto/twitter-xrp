@@ -11,7 +11,6 @@ AT = os.environ.get('TWITTER_XRP_ACCESS_TOKEN')
 ATS = os.environ.get('TWITTER_XRP_ACCESS_TOKEN_SECRET')
 BT = os.environ.get('TWITTER_XRP_BEARER_TOKEN')
 
-
 # Twitterオブジェクトの生成
 client = tweepy.Client(BT, AK, AS, AT, ATS)
 twitter_api =  OAuth1Session(AK, AS, AT, ATS)
