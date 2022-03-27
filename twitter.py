@@ -99,8 +99,7 @@ class Twitter:
                 print('text:' + text)
                 print('----------------------------------------------')
 
-                if ('本日の' in text or 'XRP' in text):
-                    print('本日のは含んでいる')
+                if ('リップル' in text or 'XRP' in text):
                     # リツイートAPI叩く
                     url = 'https://api.twitter.com/1.1/statuses/retweet/' + tweet_id + '.json'
 
