@@ -135,62 +135,62 @@ class Twitter:
             content =  f'現在のリップルの時価総額ランキングは{self.cmc_rank}位です。\n'
             content += f'値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です。\n\n'
-            content +=  '#XRP #暗号資産' 
+            content +=  '#XRP #仮想通貨' 
 
             if self.cmc_rank < int(last_cmc_rank):
                 content =  f'【時価総額ランキング上昇!!!】\n'
                 content += f'現在のリップルの時価総額ランキングは{self.cmc_rank}位ｳﾎ!。\n'
                 content += f'値段は{self.price}円です。\n'
                 content += f'これは24時間前に比べて{self.percent_change_24h}%です。\n\n'
-                content +=  '#XRP #暗号資産' 
+                content +=  '#XRP #仮想通貨' 
 
         elif 0 < self.percent_change_24h < 4:
             content =  f'現在のリップルの時価総額ランキングは{self.cmc_rank}位です。\n'
             content += f'値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて+{self.percent_change_24h}%です。\n\n'
-            content +=  '#XRP #暗号資産' 
+            content +=  '#XRP #仮想通貨' 
 
             if self.cmc_rank < int(last_cmc_rank):
                 content =  f'【時価総額ランキング上昇!!!】\n'
                 content += f'現在のリップルの時価総額ランキングは{self.cmc_rank}位ｳﾎ!。\n'
                 content += f'値段は{self.price}円です。\n'
                 content += f'これは24時間前に比べて{self.percent_change_24h}%です。\n\n'
-                content +=  '#XRP #暗号資産' 
+                content +=  '#XRP #仮想通貨' 
              
         elif 4 <= self.percent_change_24h < 8:
             content = '【いい調子♪】\n'
             content += f'現在のリップルの時価総額ランキングは{self.cmc_rank}位です。\n'
             content += f'値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です！\n\n'
-            content +=  '#XRP #暗号資産' 
+            content +=  '#XRP #仮想通貨' 
 
         elif 8 <= self.percent_change_24h < 13:
             content = '【きてるｳﾎ！】\n'
             content += f'現在のリップルの時価総額ランキングは{self.cmc_rank}位です。\n'
             content += f'値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です！！\n\n'
-            content +=  '#XRP #暗号資産' 
+            content +=  '#XRP #仮想通貨' 
 
         elif 13 <= self.percent_change_24h < 20:
             content = '【うぉおおぉｳﾎｳﾎｳﾎｳﾎ!!】\n'
             content += f'現在のリップルの時価総額ランキングは{self.cmc_rank}位ｳﾎ。\n'
             content += f'値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です！！\n\n'
-            content +=  '#XRP #暗号資産' 
+            content +=  '#XRP #仮想通貨' 
 
         elif 20 <= self.percent_change_24h < 40:
             content = '【ｳﾎｳﾎｳｯﾎｳﾎｳｯﾎ!!!ｳﾎ!!!】\n'
             content +=  f'現在のリップルの時価総額ランキングは{self.cmc_rank}位ｳﾎ。\n'
             content += f'値段は{self.price}円ｳﾎ。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です！！！\n\n'
-            content +=  '#XRP #暗号資産' 
+            content +=  '#XRP #仮想通貨' 
 
         elif 40 <= self.percent_change_24h < 70:
             content = '【ｳｯﾎｳｯﾎｳﾎｳｯﾎ!!ｳｯﾎｳｯﾎｳﾎｳﾎｳｯﾎｳｯﾎｯﾎ!!!!!!!】\n'
             content +=  f'現在のｳﾎの時価総額ランキングは{self.cmc_rank}位ｳｯﾎ。\n'
             content += f'ｳｯﾎは{self.price}円ｳｯﾎ。\n'
             content += f'ｳﾎは24時間前に比べて{self.percent_change_24h}%ｳｯﾎｳｯﾎ!!\n\n'
-            content +=  '#XRPｳﾎ #暗号資産' 
+            content +=  '#XRPｳﾎ #XRP' 
 
         elif 70 <= self.percent_change_24h:
             content = 'ありがとうございます・・・知能を取り戻しました\n'
@@ -198,7 +198,7 @@ class Twitter:
             content +=  f'現在のリップルの時価総額ランキングは{self.cmc_rank}位です。\n'
             content += f'値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です。\n\n'
-            content +=  '#XRPｳﾎ #暗号資産' 
+            content +=  '#XRPｳﾎ #XRP' 
 
         return content
 
