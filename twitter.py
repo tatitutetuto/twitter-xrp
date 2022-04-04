@@ -125,55 +125,55 @@ class Twitter:
     def get_tweet_content(self):
         content = ''
 
-        if self.volume_change_24h < 0:
+        if self.percent_change_24h < 0:
             content = f'現在リップルの値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です。\n'
             content += f'出来高は24時間前に比べて{self.volume_change_24h}%です。\n\n'            
             content +=  '#XRP #仮想通貨' 
 
             
-        elif 0 <= self.volume_change_24h < 4:
+        elif 0 <= self.percent_change_24h < 4:
             content = f'現在リップルの値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて+{self.percent_change_24h}%です。\n'
             content += f'出来高は24時間前に比べて+{self.volume_change_24h}%です。\n\n'            
             content +=  '#XRP #仮想通貨' 
              
-        elif 4 <= self.volume_change_24h < 8:
+        elif 4 <= self.percent_change_24h < 8:
             content = '【いい調子♪】\n'
             content += f'現在リップルの値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です!\n'
             content += f'出来高は24時間前に比べて+{self.volume_change_24h}%です!\n\n'            
             content +=  '#XRP #仮想通貨' 
 
-        elif 8 <= self.volume_change_24h < 13:
+        elif 8 <= self.percent_change_24h < 13:
             content = '【きてるｳﾎ！】\n'
             content += f'現在リップルの値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です!!\n'
             content += f'出来高は24時間前に比べて+{self.volume_change_24h}%です!!\n\n'            
             content +=  '#XRP #仮想通貨' 
 
-        elif 13 <= self.volume_change_24h < 20:
+        elif 13 <= self.percent_change_24h < 20:
             content = '【うぉおおぉｳﾎｳﾎｳﾎｳﾎ!!】\n'
             content += f'現在リップルの値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です!!\n'
             content += f'出来高は24時間前に比べて+{self.volume_change_24h}%です!!\n\n'            
             content +=  '#XRP #仮想通貨' 
 
-        elif 20 <= self.volume_change_24h < 40:
+        elif 20 <= self.percent_change_24h < 40:
             content = '【ｳﾎｳﾎｳｯﾎｳﾎｳｯﾎ!!!ｳﾎ!!!】\n'
             content += f'現在リップルの値段は{self.price}円ｳﾎ。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です!!!\n'
             content += f'出来高は24時間前に比べて+{self.volume_change_24h}%ｳﾎ!\n\n'
             content +=  '#XRP #仮想通貨' 
 
-        elif 40 <= self.volume_change_24h < 70:
+        elif 40 <= self.percent_change_24h < 70:
             content = '【ｳｯﾎｳｯﾎｳﾎｳｯﾎ!!ｳｯﾎｳｯﾎｳﾎｳﾎｳｯﾎｳｯﾎｯﾎ!!!!!!!】\n'
             content += f'ｳｯﾎは{self.price}円ｳｯﾎ。\n'
             content += f'ｳﾎは24時間前に比べて{self.percent_change_24h}%ｳｯﾎｳｯﾎ!!\n'
             content += f'ｳﾎｳﾎは24時間前に比べて+{self.volume_change_24h}%ｳﾎ!!\n\n'
             content +=  '#XRPｳﾎ #XRP' 
 
-        elif 70 <= self.volume_change_24h:
+        elif 70 <= self.percent_change_24h:
             content = '生きてて良かった・・\n'
             content += f'現在リップルの値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です。\n'
