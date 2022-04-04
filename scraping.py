@@ -36,10 +36,19 @@ class Scraping:
         correct_price = float(data[CMC_XRP_ID]["quote"]["JPY"]["price"])
         price = round(correct_price, 2)
         print(f'リップルの価格は現在{price}円です')
+        
+        # 出来高取得、小数点第3位を四捨五入
+        volume_change_24h = float(data[CMC_XRP_ID]["quote"]["JPY"]["volume_change_24h"])
+        volume_change_24h = round(volume_change_24h, 2)
+        if volume_change_24h > 0:
+            print(f'リップルの値段は24時間前に比べて{volume_change_24h}%上がっています')
+
+        else:
+            print(f'リップルの値段は24時間前に比べて{volume_change_24h}%下がっています')
 
         # コインマーケットキャップ内の時価総額取得
-        cmc_rank = data[CMC_XRP_ID]["cmc_rank"]   
-        print(f'リップルの時価総額ランキングは現在{cmc_rank}位です')
+#         cmc_rank = data[CMC_XRP_ID]["cmc_rank"]   
+#         print(f'リップルの時価総額ランキングは現在{cmc_rank}位です')
 
         # 24時間前との値段比較、小数点第3位を四捨五入
         correct_percent_change_24h = float(data[CMC_XRP_ID]["quote"]["JPY"]["percent_change_24h"])
@@ -50,4 +59,4 @@ class Scraping:
         else:
             print(f'リップルの値段は24時間前に比べて{percent_change_24h}%下がっています')
 
-        return price, cmc_rank, percent_change_24h
+        return price, volume_change_24h, percent_change_24h
