@@ -41,10 +41,10 @@ class Scraping:
         volume_change_24h = float(data[CMC_XRP_ID]["quote"]["JPY"]["volume_change_24h"])
         volume_change_24h = round(volume_change_24h, 2)
         if volume_change_24h > 0:
-            print(f'リップルの値段は24時間前に比べて{volume_change_24h}%上がっています')
+            print(f'リップルの出来高は24時間前に比べて{volume_change_24h}%上がっています')
 
         else:
-            print(f'リップルの値段は24時間前に比べて{volume_change_24h}%下がっています')
+            print(f'リップルの出来高は24時間前に比べて{volume_change_24h}%下がっています')
 
         # コインマーケットキャップ内の時価総額取得
 #         cmc_rank = data[CMC_XRP_ID]["cmc_rank"]   
