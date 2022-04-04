@@ -174,7 +174,7 @@ class Twitter:
             content +=  '#XRPｳﾎ #XRP' 
 
         elif 70 <= self.volume_change_24h:
-            content = '我に返りました\n'
+            content = '生きてて良かった・・\n'
             content += f'現在リップルの値段は{self.price}円です。\n'
             content += f'これは24時間前に比べて{self.percent_change_24h}%です。\n'
             content += f'出来高は24時間前に比べて+{self.volume_change_24h}%です。\n\n'
