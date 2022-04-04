@@ -4,12 +4,12 @@ import line as ln
 
 def main():
     try:
-        # 値段、時価総額ランクを取得
+        # 値段、出来高を取得
         scraping = sp.Scraping()
-        price, cmc_rank, percent_change_24h = scraping.get_xrp_info()
+        price, volume_change_24h, percent_change_24h = scraping.get_xrp_info()
 
         # リップルの情報をツイートする
-        twitter = tw.Twitter(price, cmc_rank, percent_change_24h)
+        twitter = tw.Twitter(price, volume_change_24h, percent_change_24h)
         last_tweet_id = twitter.tweet_xrp_info()
 
         # 関連ニュースをリツイートする
