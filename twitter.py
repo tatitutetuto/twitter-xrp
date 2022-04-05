@@ -125,7 +125,7 @@ class Twitter:
     def get_tweet_content(self):
         content = ''
         
-        if self.volume_change_24h > 0:
+        if self.volume_change_24h >= 0:
             self.volume_change_24h = '+' + self.volume_change_24h
 
             
