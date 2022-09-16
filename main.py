@@ -15,7 +15,7 @@ def main():
         # 関連ニュースをリツイートする
         twitter.retweet(last_tweet_id)
 
-        # DMをLINEで通知する
+        # DMをLINEで通知する 
         # twitter.info_direct_message()
         
 
