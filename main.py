@@ -4,7 +4,7 @@ import line as ln
 
 def main():
     try:
-        # 値段、出来高を取得
+        # 値段、出来高を取得 
         scraping = sp.Scraping()
         price, volume_change_24h, percent_change_24h = scraping.get_xrp_info()
 
