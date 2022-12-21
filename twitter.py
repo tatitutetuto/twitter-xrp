@@ -30,12 +30,12 @@ class Twitter:
         
         # ツイート内容
         content = self.get_tweet_content()
-        print(content)
+        print('content:' + content)
 
         # ツイートを投稿
         res = client.create_tweet(text=content)
         # print(res)
-        return last_tweet_id
+#         return last_tweet_id
         
     ##
     ## 前回の時価総額ランキングを取得する
