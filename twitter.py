@@ -27,6 +27,7 @@ class Twitter:
     def tweet_xrp_info(self):
          # 前回のツイートIDを取得
 #         last_tweet_id = self.get_last_tweet()
+        print('AK:' + AK)
         
         # ツイート内容
         content = self.get_tweet_content()
