@@ -26,7 +26,7 @@ class Twitter:
     ##
     def tweet_xrp_info(self):
          # 前回の時価総額ランキングを取得
-#         last_tweet_id = self.get_last_tweet()
+        last_tweet_id = self.get_last_tweet()
         
         # ツイート内容
         content = self.get_tweet_content()
@@ -34,8 +34,8 @@ class Twitter:
 
         # ツイートを投稿
         res = client.create_tweet(text=content)
-        # print(res)
-#         return last_tweet_id
+        print('res:' + res)
+        return last_tweet_id
         
     ##
     ## 前回の時価総額ランキングを取得する
