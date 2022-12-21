@@ -10,7 +10,7 @@ on:
 #   push:
   schedule:
 #     - cron: '15 2-23/4 * * *　'
-    - cron: '7 12 * * *　'
+    - cron: '50 12 * * *　'
 
 jobs:
   build:
