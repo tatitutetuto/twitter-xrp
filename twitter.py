@@ -25,8 +25,8 @@ class Twitter:
     ## リップルの情報をCMCから取得する
     ##
     def tweet_xrp_info(self):
-         # 前回の時価総額ランキングを取得
-#         last_tweet_id = self.get_last_tweet()
+         # 前回のツイートIDを取得
+        last_tweet_id = self.get_last_tweet()
         
         # ツイート内容
         content = self.get_tweet_content()
@@ -35,7 +35,7 @@ class Twitter:
         # ツイートを投稿
         res = client.create_tweet(text=content)
         print('res:' + res)
-#         return last_tweet_id
+        return last_tweet_id
         
     ##
     ## 前回の時価総額ランキングを取得する
@@ -53,7 +53,7 @@ class Twitter:
             print("i:" + str(i))
             tweet_content = timeline[i]['text']
 
-            target = 'リップルの出来高は24時間前に比べて'
+            target = '24時間前に比べて'
             idx = tweet_content.find(target)
 
             # 出来高ツイートがあれば、ループ抜ける
