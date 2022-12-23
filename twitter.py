@@ -5,17 +5,17 @@ import json
 import os
 
 # トークン等取得
-AK = os.environ.get('TWITTER_XRP_API_KEY')
-AS = os.environ.get('TWITTER_XRP_API_SECRET_KEY')
-AT = os.environ.get('TWITTER_XRP_ACCESS_TOKEN')
-ATS = os.environ.get('TWITTER_XRP_ACCESS_TOKEN_SECRET')
-BT = os.environ.get('TWITTER_XRP_BEARER_TOKEN')
+# AK = os.environ.get('TWITTER_XRP_API_KEY')
+# AS = os.environ.get('TWITTER_XRP_API_SECRET_KEY')
+# AT = os.environ.get('TWITTER_XRP_ACCESS_TOKEN')
+# ATS = os.environ.get('TWITTER_XRP_ACCESS_TOKEN_SECRET')
+# BT = os.environ.get('TWITTER_XRP_BEARER_TOKEN')
 
-# AK = os.environ['TWITTER_XRP_API_KEY']
-# AS = os.environ['TWITTER_XRP_API_SECRET_KEY']
-# AT = os.environ['TWITTER_XRP_ACCESS_TOKEN']
-# ATS = os.environ['TWITTER_XRP_ACCESS_TOKEN_SECRET']
-# BT = os.environ['TWITTER_XRP_BEARER_TOKEN']
+AK = os.environ['TWITTER_XRP_API_KEY']
+AS = os.environ['TWITTER_XRP_API_SECRET_KEY']
+AT = os.environ['TWITTER_XRP_ACCESS_TOKEN']
+ATS = os.environ['TWITTER_XRP_ACCESS_TOKEN_SECRET']
+BT = os.environ['TWITTER_XRP_BEARER_TOKEN']
 
 # Twitterオブジェクトの生成
 client = tweepy.Client(BT, AK, AS, AT, ATS)
