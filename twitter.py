@@ -3,6 +3,8 @@ import tweepy
 import config
 import json
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # トークン等取得
 AK = os.environ.get('TWITTER_XRP_API_KEY')
