@@ -7,11 +7,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # トークン等取得
-AK = os.environ.get('TWITTER_XRP_API_KEY')
-AS = os.environ.get('TWITTER_XRP_API_SECRET_KEY')
-AT = os.environ.get('TWITTER_XRP_ACCESS_TOKEN')
-ATS = os.environ.get('TWITTER_XRP_ACCESS_TOKEN_SECRET')
-BT = os.environ.get('TWITTER_XRP_BEARER_TOKEN')
+# AK = os.environ.get('TWITTER_XRP_API_KEY')
+# AS = os.environ.get('TWITTER_XRP_API_SECRET_KEY')
+# AT = os.environ.get('TWITTER_XRP_ACCESS_TOKEN')
+# ATS = os.environ.get('TWITTER_XRP_ACCESS_TOKEN_SECRET')
+# BT = os.environ.get('TWITTER_XRP_BEARER_TOKEN')
+AK = 'HgiupPVYcjLibbJklIEeISIGV'
+AS = 'CBwE70XMuc3BfBs3tFeNOrD6eIcdLRsmK6HR86WhFcF9mP6o0T'
+AT = '1506272488615202817-RnhZRjeTY8kFsKF63GO49RfiM113st'
+ATS = '69kSChJ8xoEHRqEQQBS8aOMsTWqHTpcW6wIvvCED1sHro'
+BT = 'AAAAAAAAAAAAAAAAAAAAAFAMagEAAAAAGTlPf0xO%2Bony0iSJOYVpBwqjA0Y%3DWZnBW7KcdNlf9fvGoR0LZKt4yA4k67dqC0wtk4FnSheFPoFRhM'
+
 
 # Twitterオブジェクトの生成
 client = tweepy.Client(BT, AK, AS, AT, ATS)
