@@ -11,7 +11,6 @@ def main():
         # リップルの情報をツイートする
         twitter = tw.Twitter(price, volume_change_24h, percent_change_24h)
         last_tweet_id = twitter.tweet_xrp_info()
-#         twitter.tweet_xrp_info()
 
         # 関連ニュースをリツイートする
         twitter.retweet(last_tweet_id)
