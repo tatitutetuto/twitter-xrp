@@ -63,10 +63,12 @@ class Twitter:
 
             target = '24時間前に比べて'
             idx = tweet_content.find(target)
+            print("idx:" + str(idx))
 
             # 出来高ツイートがあれば、ループ抜ける
             if(idx != -1):
                 last_tweet_id = int(timeline[i]['id_str'])
+                print("last_tweet_id:" + str(last_tweet_id))
                 break
         
         return last_tweet_id
