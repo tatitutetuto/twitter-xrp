@@ -7,11 +7,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # トークン等取得
-# AK = os.environ.get('TWITTER_XRP_API_KEY')
-# AS = os.environ.get('TWITTER_XRP_API_SECRET_KEY')
-# AT = os.environ.get('TWITTER_XRP_ACCESS_TOKEN')
-# ATS = os.environ.get('TWITTER_XRP_ACCESS_TOKEN_SECRET')
-# BT = os.environ.get('TWITTER_XRP_BEARER_TOKEN')
+AK = os.environ.get('TWITTER_XRP_API_KEY')
+AS = os.environ.get('TWITTER_XRP_API_SECRET_KEY')
+AT = os.environ.get('TWITTER_XRP_ACCESS_TOKEN')
+ATS = os.environ.get('TWITTER_XRP_ACCESS_TOKEN_SECRET')
+BT = os.environ.get('TWITTER_XRP_BEARER_TOKEN')
 # AK = 'HgiupPVYcjLibbJklIEeISIGV'
 # AS = 'CBwE70XMuc3BfBs3tFeNOrD6eIcdLRsmK6HR86WhFcF9mP6o0T'
 # AT = '1506272488615202817-RnhZRjeTY8kFsKF63GO49RfiM113st'
